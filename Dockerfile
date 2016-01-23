@@ -19,6 +19,7 @@ RUN a2enmod rewrite
 RUN a2enmod headers
 RUN a2enmod deflate
 RUN a2enmod env
+RUN a2enmod expires
 
 VOLUME ["/var/www/html", "/var/log/apache2"]
 
