@@ -16,6 +16,9 @@ ADD ./supervisor-apache2.conf /etc/supervisor/conf.d/apache2.conf
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 ADD apache-default.conf /etc/apache2/sites-available/000-default.conf
 RUN a2enmod rewrite
+RUN a2enmod headers
+RUN a2enmod deflate
+RUN a2enmod env
 
 VOLUME ["/var/www/html", "/var/log/apache2"]
 
