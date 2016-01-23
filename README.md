@@ -1,2 +1,6 @@
-# docker-ubuntu-php-apache
-Generic PHP/Apache image based on Phusion basimage which is also based on Ubuntu.
+# Docker Ubuntu PHP Apache
+
+Generic PHP/Apache image based on based on Ubuntu Trusty.
+
+Default `index.html` is provided by stock Apache in Ubuntu.
+
