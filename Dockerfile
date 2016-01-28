@@ -21,9 +21,6 @@ RUN a2enmod deflate
 RUN a2enmod env
 RUN a2enmod expires
 
-# Be sure directory listing is disabled
-RUN a2dismod autoindex
-
 VOLUME ["/var/www/html", "/var/log/apache2"]
 
 EXPOSE 80
