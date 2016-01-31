@@ -4,6 +4,7 @@ MAINTAINER Leonel Baer <leonel@lysender.com>
 # Install Apache  and misc tools
 RUN apt-get -y install supervisor \ 
     apache2 \
+    libapache2-mod-php5 \
     openssl && apt-get clean
 
 # Configure servicies
